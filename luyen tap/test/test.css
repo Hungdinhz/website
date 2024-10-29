@@ -1,0 +1,114 @@
+aside{
+
+    width: 20%;
+    border: 1px solid black;
+    margin-right: 15px;
+    float: left;
+   position: relative;
+}
+
+.product__title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white-text);
+    background-color: rgb(187, 80, 80);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.product__title i {
+    display: inline-block;
+    width: 20%;
+    margin-right: 10px;
+    font-size: 3rem;
+}
+
+.products__list {
+    border-bottom: 0.1px solid black;
+    display: flex;
+    
+}
+.products__list a{
+    display: block;
+    width: 200%;
+    height: 100%;
+    color: var(--font-text);
+    padding: 10px;
+    
+}
+.products__more{
+    width: 25vw;
+    background-color: rgb(221, 30, 30);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 2;
+    display: block;
+}
+
+.products__more p{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.products__more li:hover {
+    color: red
+}
+
+.products__list >a:hover {
+    color: red;
+}
+
+.products__list:hover {
+    background-color: rgb(218, 216, 216);
+}
+
+
+/* Thông tin thêm */
+.bonus {
+    margin-bottom: 5px;
+}
+.bonus__node {
+    padding: 10px;
+}
+.bonus__node:hover {
+    background-color: rgb(218, 216, 216);
+}
+.bonus__node--link {
+    display: block;
+    
+}
+.bonus__node--link:visited {
+    color: #333;
+}
+/* Gọi mua hàng */
+.tel {
+    height: 80px;
+    min-height: 50px;
+    border: 2px dashed red;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.tel:hover {
+    border: 5px solid red;
+    transition: 0.5s;
+}
+
+.tel--link {
+    font-size: 2rem;
+    position: relative;
+    top: 5px;   
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.tel--link:visited {
+    color: red;
+}

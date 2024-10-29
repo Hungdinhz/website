@@ -1,0 +1,41 @@
+/*
+    shorthand property:
+    transition: property, duration, timing-function, delay
+    timing-function: 
+    -ease: default
+    -ease-in: slow - fast
+    -ease-out: fast - slow
+    -esae-in-out: slow - speed - slow
+    -linear: constant speed
+    -cubic-bezier(P1x, P1y, P2x, P2y)
+*/
+
+/* 
+  transform
+  -scale(x, y)): enlarge or shrink
+  -rorate() : 
+  -skew()
+  -translate();
+  -origin: transform-origin: [x-location] [y-location];
+*/
+.square1b {
+    display: inline-block;
+    width:100px;
+    height:100px;
+    padding:10px;
+    color:#fff;
+    background-color:blue;
+    transition: all 1.5s linear 0.5s;
+    transform-origin: left top;
+  }
+  .square1b:hover {
+    background-color:red;
+    color:#000;
+    transform: translate(100%, 100%);
+    transform: scale(2);
+    transform: rotate(180deg);
+    
+    /*transform: skewX(25deg);*/
+  }
+  
+

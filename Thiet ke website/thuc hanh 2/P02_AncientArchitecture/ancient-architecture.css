@@ -1,0 +1,129 @@
+
+
+body {
+    font-family: sans-serif;
+    background-color: #e2d7aa;
+    color: #000000;
+    font-size: 16px;
+    width: 1180px;
+    margin: auto;
+    text-align: center;
+}
+
+body img {
+    width: 1100px;
+    height: 450px;
+   
+}
+
+nav {
+    margin: 30px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+nav a {
+    color: #000000;
+    font-size: 28px;
+    text-decoration: none;
+}
+nav ul li:first-child a{
+    color: #0a2d4a;
+    font-weight: bold;
+}
+nav ul li:last-child a{
+    color: #0a2d4a;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 65px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    width: 1100px;
+    margin-bottom: 20px;
+    display: flex;
+    column-gap: 20px;
+    
+    margin: auto;
+}
+
+article img {
+    width: 350px;
+    height: 200px;
+}
+
+article { 
+    flex: 1;
+    min-height: 600px;
+    
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+h3 a {
+    color: blue;
+    text-decoration: none;
+}
+
+article p:first-of-type{
+    padding-top: 20px;
+    line-height: 20px;
+    text-align: justify;
+    margin: 0;
+}
+article p:first-of-type:first-letter {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+article :last-child a{
+    color: white;
+    text-decoration: none;
+}
+
+article p:last-of-type {
+
+    text-align: start;
+    
+}
+
+article p:last-of-type span a{
+    background: url(images/bg2.jpg);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+article p:last-of-type img {
+    width: 100px;
+    height: 100px;
+}
+
+article p:last-of-type span:first-of-type a::before { 
+    content: url("images/comment.png");
+    position: relative;
+    right: 5px;
+    top: 7px;
+    padding: 10px;
+}
+
+
+footer {
+    margin: 0;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+

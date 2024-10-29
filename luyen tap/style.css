@@ -1,0 +1,361 @@
+body {
+    background-color: rgb(13, 13, 13);
+    margin: 0;
+    
+}
+
+header {
+    background-color: rgb(57, 193, 193);
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(40, 38, 38);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    border-right: 2px solid black;
+    width: 70px;
+    height: auto;
+}
+
+.navbar a:hover {
+    color: rgb(241, 241, 241);
+    font-weight: bold;
+}
+
+.navbar li {
+    float: left;
+}
+main{
+   
+    padding: 0;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+
+aside {
+    width: 20%;
+    height: auto;
+    background-color: rgb(50, 49, 49);
+    padding: 0;
+    float: left;
+    box-sizing: border-box;
+    margin: 0;
+}
+aside >p{
+    color: aqua;
+    text-align: center;
+    display: block;
+}
+.dropdown{
+    display: block;
+}
+.dropdown button{
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    text-align: left;
+    margin: 0;
+    font-size: 2em;
+    cursor:pointer;
+}
+
+.dropdown a{
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgb(92, 95, 95);
+    margin:0;
+}
+.dropdown a:hover{
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: rgb(67, 70, 70);
+}
+.link   i{
+    
+    color: rgb(83, 246, 83);
+    font-size: 30px;
+    width: 30%;
+    height:auto;
+    padding: 10px;
+    margin:0;
+    float: left;
+    box-sizing: border-box;
+}
+.link   p{
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    height: auto;
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+    display: none;
+}
+
+.dropdown .note{
+    display: none;
+    position: relative;
+    box-shadow: 3px 3px 5px rgb(231, 231, 144), -3px -3px 5px rgb(231, 231, 144);
+}
+.dropdown:hover .note{
+    display: block;
+}
+.link:hover p{
+    display: block;
+}
+.dropdown a:visited{
+    color: white;
+}
+
+section {
+    width: 60%;
+    background-color: rgb(85, 85, 85);
+    color: aquamarine;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    border: 2px solid white;
+    margin: 0;
+    height:auto;
+}
+
+.nd{
+    width: 70%;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    border-right: 2px solid white;
+    
+    
+}
+.doraemon h4{
+    background-color: rgb(43, 0, 59);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.imagedoraemon{
+    text-align: center;
+}
+.imagedoraemon img{
+    width: 80%;
+    height: auto;
+    background-color: antiquewhite;
+    
+}
+.doraemon p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.doraemon{
+    border: 2px solid white;
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    float: left;
+   
+}
+.infor{
+    border: 1px solid white;
+    
+}
+.infor h4{
+    background-color: rgb(211, 181, 223);
+    color: black;
+    font-weight: bold;
+    margin:0;
+   
+}
+#infor1{
+    list-style-type: none;
+    text-align: left;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#infor1 li{
+   
+    background-color: rgb(169, 169, 220);
+    font-weight: normal;
+    padding: 10px;
+    width: 40%;
+    height: auto;
+
+    text-align:left;
+    box-sizing: border-box;
+    height: auto;
+}
+
+#inforactive{
+    
+    background-color:  rgb(169, 169, 220);
+    font-weight: normal;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    box-sizing: border-box;
+    
+    margin: 0;
+}
+#infor1 p{
+   
+    width: 60%;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: rgb(224, 223, 223);
+   color: black;
+ 
+   height: auto;
+   padding: 10px;
+   margin: 0;
+}
+#infor1 a{
+    text-decoration: none;
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: rgb(224, 223, 223);
+   color:rgb(61, 61, 216);
+
+   height: auto;
+   padding: 10px;
+   margin: 0;
+}
+#infor a:visited{
+    color: rgb(61, 61, 216);
+}
+
+
+article {
+    background-color: rgb(48, 48, 48);
+    color: yellow;
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    float:left;
+}
+footer{
+    background-color: rgb(0, 239, 159);
+    clear: both;
+    width: 100%;
+    height: 1000px;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+footer h2{
+    text-align: center;
+
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 10px;
+    font-size: 3em;
+}
+#box1{
+    background-color: rgb(174, 127, 255);
+    position: relative;
+    box-shadow: 10px 10px 20px yellow, -10px -10px 20px yellow;
+   animation-name: amb1;
+   animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    
+}
+#box2{
+    background-color: red;
+    position: relative;
+    transform: translate(100%, 100%);
+    animation-name: amb2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+@keyframes amb1{
+    0%{     background-color: rgb(237, 115, 115);
+        transform: translateX(-100%) scale(0.5,0.5) rotateY(360deg) skew(45deg)}
+    20%{
+        background-color: rgb(50, 238, 238);
+    }
+    40%{
+        background-color: rgb(166, 238, 50);
+    }
+    60%{
+        background-color: rgb(229, 238, 50);
+    }
+    80%{
+        background-color: rgb(50, 238, 238);
+    }
+    100%{background-color: blanchedalmond;
+        transform: translateX(100vw) scale(1.5,1.5) }
+}
+@keyframes amb2{
+    0%{     background-color: rgb(249, 249, 249);
+        transform: translate(-100%,-100%)}
+    20%{
+        background-color: rgb(50, 238, 238);
+        transform: translate(20vw,100%)
+    }
+    40%{
+        background-color: rgb(239, 218, 28);
+        transform: translate(40vw,-100%)
+    }
+    60%{
+        background-color: rgb(25, 28, 223);
+        transform: translate(60vw,100%)
+    }
+    80%{
+        background-color: rgb(50, 238, 238);
+        transform: translate(80vw,-100%)
+    }
+    100%{background-color: rgb(206, 40, 56);
+        transform: translateX(100vw)  }
+}
+
+
+

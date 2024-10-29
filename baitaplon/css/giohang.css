@@ -1,0 +1,189 @@
+
+
+section {
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.6rem;
+}
+
+.home__page a{
+    color: black;
+}
+.home__page a:visited {
+    color: black;
+}
+.home__page span{
+    opacity: 0.6;
+}
+
+.cart {
+    padding-left: 10px;
+}
+
+.cart__items {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    min-width: 500px;
+    width: 80%;
+    margin: 5px auto;
+    border: 1px solid rgb(208, 206, 206);
+    padding: 5px;
+}
+
+.cart__img{
+    width: 200px;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.cart__img img{
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}
+.cart__delete {
+    display: flex;
+    align-items: center;
+}
+
+.cart__infor {
+   width: 60%;
+}
+
+.cart__name {
+    margin-bottom: 5px;
+}
+
+.cart__cost {
+    color: red;
+}
+
+.cart__cost span:last-of-type {
+    font-size: small;
+    vertical-align: text-top;
+    text-decoration: underline;
+}
+
+.cart__count {
+    display: flex;
+    align-items: center;
+    right: 10px;
+}
+ 
+.cart__count .align {
+    display: flex;
+    border: 1px solid black;
+}
+.cart__count input {
+    width: 60px;
+    text-align: center;
+    border: none;
+    margin: 0;
+}
+.cart__count button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    margin: 0;
+}
+
+.cart__note {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+.cart__note input {
+    width: 90%;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.cart__price {
+    margin-bottom: 30px;
+}
+
+.cart__price h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.cart__select {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5px;
+}
+
+.cart__date input {
+    margin-top: 5px;
+    width: 90%;
+    height: 30px;
+
+}
+
+.cart__time select {
+    margin-top: 5px;
+    width: 90%;
+    height: 30px;
+}
+
+.cart__bill {
+    margin-top: 10px;
+}
+
+.cart__sumary {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.cart__header {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.cart__total {
+    text-align: end;
+}
+
+.cart__cost--total {
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.VAT {
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.cart__deal {
+    border-top: 1px solid rgb(218, 214, 214);
+    padding: 10px;
+    border-bottom: 1px solid rgb(218, 214, 214);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart__deal span:last-of-type {
+    color: blue;
+}
+
+.cart__pay {
+    width: 100%;
+    height: 35px;
+    background-color: #d03a3a;
+    border: none;
+    color: var(--white-text);
+}
+
+.cart__pay:hover {
+    cursor: pointer;
+    background-color: red;
+    transition: 0.2s;
+}
+
+
+

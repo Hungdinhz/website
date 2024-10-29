@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng</title>
+</head>
+<body>
+  <h1>Giỏ hàng của bạn</h1>
+  <ul id="cart-list"></ul>
+  <p id="total"></p>
+  <a href="index.html">Quay lại trang sản phẩm</a>
+
+  <script>
+    // Lấy dữ liệu giỏ hàng từ localStorage
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let cartList = document.getElementById('cart-list');
+    let total = 0;
+
+    // Hiển thị từng sản phẩm trong giỏ hàng
+    cart.forEach(item => {
+      let li = document.createElement('li');
+      li.textContent = `${item.name} - ${item.price} VND`;
+      cartList.appendChild(li);
+      total += item.price;
+    });
+
+    // Hiển thị tổng giá trị giỏ hàng
+    document.getElementById('total').textContent = `Tổng cộng: ${total} VND`;
+  </script>
+</body>
+</html>

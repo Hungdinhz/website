@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Điểm danh | Quản lý nhân viên</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="diemdanh.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">
+    <!--===============================================================================================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script type="text/javascript" src="splitpage.js"></script>
+</head> 
+<body onload="time()">
+	<div class="menu_bar">
+		<h2 class="logo"><i class='bx bxs-user-circle'></i><b> QUẢN LÝ </b><span>NHÂN VIÊN</span></h2>
+
+		<ul>
+			<li><a href="quanlinhanvien.html"><b>NHÂN VIÊN</b></a></li>
+			<li class="nowtab"><a href="">ĐIỂM DANH</a></li>
+			<li><a href="tienluong.html">TIỀN LƯƠNG</a></li>
+			<li><a href="">Tài Khoản</a>
+				<ul class="dropdown">
+					<li><a href="">Thông tin tk</a></li>
+					<li><a href="Login.html">Đăng xuất</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="container-fluid_al">
+        <div id="clock"></div>
+        <br>
+        <br>
+        <p class="timkiemnhanvien"><b>TÌM KIẾM NHÂN VIÊN:</b></p><Br><Br>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Nhập tên nhân viên cần tìm...">
+        <br>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <br>
+        <br>
+	</div>
+	<br>
+	<br>
+	</div>
+	<table class="table table-bordered" id="myTable">
+    <thead>
+        <tr class="ex">
+            <th width="auto">Tên Nhân Viên</th>
+            <th width="auto">Giới tính</th>
+            <th>Chức vụ</th>
+            <th>Ngày</th>
+            <th>Bắt đầu ca</th>
+            <th>Kết thúc ca</th>
+            <th class="funtion">Điểm danh</th>
+            <th class="ghichu">Ghi chú</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Võ Trường</td>
+            <td>Nam</td>
+            <td>Admin</td>
+            <td class="currentDate"></td>
+            <td>8:00</td>
+            <td>17:00</td>
+            <td type="checkbox" class="diemdanh"></td>
+            <td><input type="text" name="ghichu"></td>
+        </tr>
+        <tr>
+            <td>Trần Khả Ái</td>
+            <td>Nữ</td>
+            <td>Phục Vụ</td>
+            <td class="currentDate"></td>
+            <td></td>
+            <td></td>
+            <td type="checkbox" class="diemdanh"></td>
+            <td><input type="text" name="ghichu" value="Nghỉ ốm"></td>
+        </tr>
+        <tr>
+            <td>Nguyễn Tấn Trung</td>
+            <td>Nam</td>
+            <td>Dịch Vụ</td>
+            <td class="currentDate"></td>
+            <td>7:00</td>
+            <td>16:00</td>
+            <td></td>
+            <td><input type="text" name="ghichu"></td>
+        </tr>
+        <tr>
+            <td>Trần Trúc An</td>
+            <td>Nữ</td>
+            <td>Phục Vụ</td>
+            <td class="currentDate"></td>
+            <td>8:30</td>
+            <td>17:30</td>
+            <td></td>
+            <td><input type="text" name="ghichu"></td>
+        </tr>
+        <tr>
+            <td>Phạm Thu Cúc</td>
+            <td>Nữ</td>
+            <td>Thu Ngân</td>
+            <td class="currentDate"></td>
+            <td>9:00</td>
+            <td>18:00</td>
+            <td></td>
+            <td><input type="text" name="ghichu"></td>
+        </tr>
+        <tr>
+            <td>Nguyễn Thị Kim Ngân</td>
+            <td>Nữ</td>
+            <td>Phục Vụ</td>
+            <td class="currentDate"></td>
+            <td>8:00</td>
+            <td>17:00</td>
+            <td></td>
+            <td><input type="text" name="ghichu"></td>
+        </tr>
+        <tr>
+            <td>Nguyễn Anh Tuấn</td>
+            <td>Nam</td>
+            <td>Dịch Vụ</td>
+            <td class="currentDate"></td>
+            <td>9:30</td>
+            <td>18:30</td>
+            <td></td>
+            <td><input type="text" name="ghichu"></td>
+        </tr>
+        <tr>
+            <td>Huỳnh Cẩm Thu</td>
+            <td>Nữ</td>
+            <td>Tư Vấn</td>
+            <td class="currentDate"></td>
+            <td>8:00</td>
+            <td>17:00</td>
+            <td></td>
+            <td><input type="text" name="ghichu"></td>
+        </tr>
+        <tr>
+            <td>Nguyễn Xuân Ly</td>
+            <td>Nữ</td>
+            <td>Tư Vấn</td>
+            <td class="currentDate"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="text" name="ghichu"></td>
+        </tr>
+        <tr>
+            <td>Hoàng Xuân Nam</td>
+            <td>Nữ</td>
+            <td>QL Kho</td>
+            <td class="currentDate"></td>
+            <td>8:30</td>
+            <td>17:30</td>
+            <td></td>
+            <td><input type="text" name="ghichu" value="Đi muộn"></td>
+        </tr>
+    </tbody>
+</table>
+
+<div id="pageNavPosition" class="text-right"></div>
+<script type="text/javascript">
+    var pager = new Pager('myTable', 5);
+    pager.init();
+    pager.showPageNav('pager', 'pageNavPosition');
+    pager.showPage(1);
+
+    const today = new Date();
+    const date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+    
+    document.querySelectorAll('.currentDate').forEach(function(cell) {
+        cell.textContent = date;
+    });
+</script>
+<hr class="hr1">
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="search.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    const rows = document.querySelectorAll('#myTable tbody tr');
+
+    rows.forEach(row => {
+        const startTime = row.cells[4].textContent.trim();
+        const endTime = row.cells[5].textContent.trim();
+        const attendanceCell = row.cells[6];
+
+        if (startTime && endTime) {
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.checked = true;
+            attendanceCell.appendChild(checkbox);
+        } else {
+            attendanceCell.textContent = '';
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.checked = false;
+            attendanceCell.appendChild(checkbox);
+        }
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    margin: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .cart-item {
+    border-radius: ;
+    margin: 50px auto 0 auto;
+  }
+  .cart-item .item-img {
+    height: 100px;
+    border-bottom: 0.5px solid rgb(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+  }
+  .cart-item .item-img img {
+    transition: scale 0.5s, translate 0.5s;
+  }
+  .item-img img:hover {
+    transform: scale(1.4);
+    translate: 0 -25px;
+  }
+  .category {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .item-detail {
+    padding: 10px;
+  }
+  .rating i {
+    font-size: 8px;
+    color: orange;
+  }
+  .rating span {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .detail-infor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .detail-infor .price {
+    font-size: 10px;
+  }
+  .price .currernt {
+    color: #3b82f6;
+    font-weight: 700;
+  }
+  .price .origin {
+    text-decoration: line-through;
+    font-size: 8px;
+  }
+  .price .discount {
+    margin-left: 5px;
+    font-weight: 700;
+  }
+  .btn-cart {
+    font-size: 13px;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 25px;
+  }
+  .btn-cart:hover {
+    background-color: #3b82f6;
+    cursor: pointer;
+  }
+  .btn-cart i {
+    font-size: 8px;
+    margin-right: 3px;
+  }
+  
+  .row-cart-flex {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .row-cart-flex .row-item {
+    border: 1px solid red;
+    flex-grow: 1;
+    flex-basis: 0;
+    /* min-width: 200px;
+    max-width: 200px; */
+  }
+  .row-cart-grid {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin-right: 100px;
+    margin-top: 50px;
+    height: 0;
+  }
+  .row-cart-grid .row-item {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 900px) {
+    .row-cart-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (max-width: 700px) {
+    .row-cart-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .row-cart-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .left{
+    overflow-y: auto;
+    width: 25%;
+    background-color: #ffffff;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 10px;
+  }
+
+  .dropdown-toggle{
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+  }
+
+  .dropdown-toggle:hover{
+    background-color: #0056b3;
+  }
+
+  .dropdown-menu{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
+  }
+
+  .dropdown-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #212529;
+    padding: 10px 20px;
+  }
+
+  .dropdown-item:hover {
+    background-color: #e9ecef; /* Màu nền khi hover */
+    color: #007bff; /* Màu chữ khi hover */
+  }
+  .form-check-input {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.7rem;
+    cursor: pointer;
+}
+
+  .mb-3{
+    margin-top: 20px;
+  }
+  .confirm {
+    background-color: #007bff;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.confirm:hover {
+    background-color: #0056b3; /* Màu khi hover */
+}
+
+.confirm:active {
+    background-color:  #007bff; /* Màu khi click */
+}
+.btn-confirm{
+  text-align: right;
+}
+.hidden {
+  display: none;
+  border: 0;
+}
+.price-range {
+  margin-bottom: 20px;
+}
+
+.price-range h4 {
+  margin-bottom: 10px;
+}
+
+.shipping-options {
+  margin-bottom: 20px;
+}
+
+.shipping-options h4 {
+  margin-bottom: 10px;
+}
+
+.shipping-options label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.brand-options {
+  margin-bottom: 20px;
+}
+
+.brand-options h4 {
+  margin-bottom: 10px;
+}
+
+.brand-options label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.promotion-options {
+  margin-bottom: 20px;
+}
+
+.promotion-options h4 {
+  margin-bottom: 10px;
+}
+
+.promotion-options label {
+  display: block;
+  margin-bottom: 5px;
+}

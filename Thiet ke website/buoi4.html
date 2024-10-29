@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buoi 4</title>
+    <style>
+        p::selection{
+            background-color: aqua;
+        }
+        .Infor input {
+             border: 1px solid rgb(0, 0, 0); /* Thiết lập border mặc định */
+        }
+
+        .Infor input:focus{
+            box-shadow: 2px 2px 1px aqua -2px -2px 1px aqua;
+            border: 4px solid aqua;
+            color: blue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error accusamus laudantium optio deleniti corrupti provident, ipsa iusto esse, nostrum ea ipsum necessitatibus eos voluptatem quam atque fugit nam, porro architecto.</p>
+    <div class="Infor">
+        <label for="FirstName">First Name: </label>
+        <input type="text" name="FirstName" id="FirstName">
+    </div>
+    <div class="Infor">
+        <label for="LastName">Last Name: </label>
+        <input type="text" name="LastName" id="LastName">
+    </div>
+    
+   
+
+</body>
+</html>

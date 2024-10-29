@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA_Compatibole" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form cua Hung</title>
+    </head>
+    <body>
+        <form action="index.php" method="POST" enctype="multipart/form-data">
+            <label for="username">username</label>
+            <input type="text" id="username" placehoder="hungne" minlength="4" maxlength="20" required>
+            <br>
+            <label for="password">password</label>
+            <input type="password" id="password" minlength="1" maxlength="20" required>
+
+            <br>
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="abc123@gmail.com" minlength="5" maxlength="30" required>
+            <br>
+            <label for="phone">phone</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <br>
+            <label for="bday">birthday</label>
+            <input type="date" id="bday"><br>
+            <label for="quanlity">quanlity</label>
+            <input type="number" id="quanlity" min="0" max="99" value="1"><br>
+            <label for="sex">sex:</label>
+            <label for="boy">Boy</label>
+            <input type="radio" id="boy" value="boy" name="sex">
+            <label for="girl">Girl</label>
+            <input type="radio" id="girl" value="girl" name="sex">
+            <label for="lgbt">Lgbt</label>
+            <input type="radio" id="lgbt" value="lgbt" name="sex"><br>
+            
+            <label for="payment">payment</label>
+            <select id="payment">
+                <option value="phung">phung</option>
+                <option value="dinh">dinh</option>
+                <option value="hung">hung</option>
+
+            </select><br>
+            <label for="checkbox">checkbox</label>
+            <input type="checkbox" id="checkbox"><br>
+            <label for="comment">comment</label><br>
+            <textarea type="text" id="comment" row="4" cols="30"></textarea><br>
+            <label for="file">FILE</label>
+            <input type="file" id="file" accept="image/jpeg, image/png"><br>
+            <br><input type="reset">
+            <br><input type="submit">
+        </form>
+
+    </body>
+
+</html>

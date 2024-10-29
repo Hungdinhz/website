@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buoi 6</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        .box__list {
+            border: 5px solid red;
+            width: 90vw;
+            height: 90vh;
+        }
+        .box {
+            border: 3px solid blue;
+            width: 50px;
+            height: 50px;
+        }
+
+        .box:nth-child(2n) {
+            background-color: yellow;
+        }
+
+        #box1 {
+            position: relative;
+        }
+
+        #box5 {
+            width: 100px;
+            height: 100px;
+            border: 5px solid orange;
+            position: absolute;
+        }
+
+        #box3 {
+            width: 70px;
+            height: 70px;;
+            position: fixed;
+        }
+        @media only screen and (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box__list">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+        <div class="box" id="box5">box5</div>
+        <div class="box" id="box6">box6</div>
+    </div>
+
+
+
+
+</body>
+</html>

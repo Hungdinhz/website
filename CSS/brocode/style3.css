@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(13, 13, 13);
+    margin: 0;
+}
+
+header {
+    background-color: rgb(57, 193, 193);
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(40, 38, 38);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    border-right: 2px solid black;
+    width: 70px;
+    height: auto;
+}
+
+.navbar a:hover {
+    color: rgb(241, 241, 241);
+    font-weight: bold;
+}
+
+.navbar li {
+    float: left;
+}
+
+
+
+aside{
+    width: 30%;
+    float: left;
+   padding: 10px;
+   background-color: aliceblue;
+   box-sizing: border-box;
+}
+section{
+    width: 40%;
+    float: left;
+   padding: 10px;
+   background-color: aqua;
+   box-sizing: border-box;
+}
+article{
+    width: 30%;
+    float: left;
+    padding: 10px;
+    background-color: purple;
+    box-sizing: border-box;
+}
+
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thêm sản phẩm</title>
+</head>
+<body>
+  <h1>Trang thêm sản phẩm</h1>
+  <div>
+    <h2>Sản phẩm 1</h2>
+    <p>Giá: 100,000 VND</p>
+    <button onclick="addToCart('Sản phẩm 1', 100000)">Thêm vào giỏ hàng</button>
+  </div>
+  <a href="cart.html">Xem giỏ hàng</a>
+ 
+  <script>
+    function addToCart(productName, price) {
+      // Lấy dữ liệu giỏ hàng từ localStorage (nếu có)
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      // Thêm sản phẩm vào giỏ hàng
+      cart.push({ name: productName, price: price });
+
+      // Lưu giỏ hàng vào localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      alert('Sản phẩm đã được thêm vào giỏ hàng!');
+    }
+  </script>
+</body>
+</html>

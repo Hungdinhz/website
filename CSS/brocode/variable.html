@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+       
+        :root{
+            --text-color: rgb(186, 43, 43);
+        }
+        h1{
+            color: var(--text-color);
+        }
+        .header{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(0, rgba(16, 163, 249, 0.5), rgba(221, 221, 30, 0)),
+            url(image/download.png);
+            
+            
+            background-size: contain;
+            background-repeat: no-repeat; 
+            padding: 20px;
+            box-sizing: border-box;
+            border: 10px dashed gray;
+            background-origin: padding-box;
+            background-position: 100px;/* vi tri cua hinh anh*/
+            /* shorthand
+                background: url()  no-repeat  center / contain 
+            */
+            background-attachment: scroll;
+        }
+       
+    </style>
+
+</head>
+<body>
+    <h1>Variable</h1>
+    
+    <div class="header" style="text-decoration: overline underline red wavy 5px; text-transform: uppercase;">hello</div>
+
+    
+</body>
+</html>

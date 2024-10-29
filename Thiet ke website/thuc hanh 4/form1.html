@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đơn Xin Cấp Phép Xuất Bản Bản Tin</title>
+    <link rel="stylesheet" href="form1.css">
+    <style>
+        .error{
+            border: 5px solid red;
+        }
+        .success {
+            border: 5px solid greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM</h1>
+        <h2>Độc Lập - Tự Do - Hạnh Phúc</h2>
+        <hr class="hr-divider">
+        <h2>ĐƠN XIN CẤP PHÉP XUẤT BẢN BẢN TIN</h2>
+        <p class="title">Kính gửi: Sở Thông tin và Truyền thông Lâm Đồng</p>
+
+        <!-- Section 1 -->
+         <form action="index.php" method="post">
+            <div class="section">
+                <div class="section-title">1. Tên cơ quan, tổ chức xin phép xuất bản:<span class="important">(*)</span></div>
+
+                <div class="input-group">
+                    <label></label>
+                    <input type="text" placeholder="Doanh nghiệp Đức Long" minlength="5" name="string"  >
+                </div>
+
+                <div class="input-group">
+                    <label>Địa chỉ:<span class="important">(*)</span></label>
+                    <input type="text" placeholder="12, Nguyễn Du - Đà Lạt"  name="string"  >
+                </div>
+
+                <div class="input-group">
+                    <div class=" input_1">
+                        <label >Điện thoại:</label>
+                        <input type="tel" placeholder="0331-242-947" name="telephone"   >
+                    </div>
+                    <div class=" input_1">
+                        <label>Fax:</label>
+                        <input type="text" placeholder="42423"  name="nguyen"  >
+                    </div>
+                </div>
+                <p>Được thành lặp (hoặc cho phép thành lập) theo:</p>
+                <div class="input-group">
+                    <div class=" input_1">
+                        <label>Giấy phép số:</label>
+                      <input type="text" placeholder="321"  name="nguyen"  >
+                    </div>
+                    <div class=" input_1">
+                        <label>Cấp ngày:</label>
+                     <input type="date" placeholder="08/08/2009"    >
+                    </div>
+                </div>
+                <p>Cơ quan cấp phép:</p>
+                <div class="input-group">
+                    <label></label>
+                    <input type="text" placeholder="Sở Thông tin và Truyền thông Lâm Đồng"  name="string"  >
+                </div>
+
+                <div class="input-group">
+                    <div class=" input_1">
+                        <label>Số ĐKKD:</label>
+                        <input type="text" placeholder="3413" name="nguyen"   >
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="section">
+                <div class="section-title">2. Người chịu trách nhiệm xuất bản bản tin:<span class="important">(*)</span></div>
+
+                <div class="input-group">
+                    <label>Họ và tên:<span class="important">(*)</span></label>
+                    <input type="text" placeholder="Nguyễn Văn Minh"   name="string" >
+                </div>
+
+                <div class="input-group">
+                    <div class=" input_1">
+                        <label>Sinh ngày:<span class="important">(*)</span></label>
+                        <input type="date" placeholder="08/08/1980"    >
+                     </div>
+                     <div class="input_1">
+                        <label>Quốc tịch:<span class="important">(*)</span></label>
+                    <select    >
+                        <option selected>Việt Nam</option>
+                        <option >UK</option>
+                        <option >USA</option>
+                        <option >Indonesia</option>
+                    </select>
+                     </div>
+                </div>
+                <div class="input-group">
+                    <label>Chức danh:<span class="important">(*)</span></label>
+                    <input type="text"  placeholder="Giám Đốc" name="string"   >
+                </div>
+
+                <div class="input-group">
+                    <div class="input_1">
+                        <label>Số chứng thực:<span class="important">(*)</span></label>
+                        <input type="text" placeholder="123" name="nguyen"   >
+                    </div>
+                    <div class="input_1">
+                        <label>Nơi cấp:<span class="important">(*)</span></label>
+                        <input type="text" placeholder="Pleiku"  name="string"  >
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Địa chỉ liên lạc:<span class="important">(*)</span></label>
+                    <input type="text" placeholder="12, Nguyễn Du - Đà Lạt"  name="string"  >
+                </div>
+                <p>Trình độ chuyên môn, nghiệp vụ:</p>
+                <div class="input-group">
+                    <label></label>
+                    <input type="text"  placeholder="Đại Học"  >
+                </div>
+            </div>
+    
+        <!-- Section 3 -->
+            <div class="section">
+                <div class="section-title">3. Tên cơ quan chủ quản (nếu có):</div>
+                <div class="input-group">
+                    <textarea >[Nội dung cơ quan chủ quản]</textarea>
+                </div>
+            </div>
+            <button type="submit" value="click me" id="submit">click me</button>
+        </form>
+    </div>
+    <script src="form1.js"></script>
+</body>
+</html>

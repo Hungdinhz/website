@@ -1,0 +1,162 @@
+body{
+    background-image: url(image/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    border: 3px solid red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    text-shadow: 5px 5px 10px blue, -5px -5px 15px red;
+    
+}
+
+.icons2{
+    text-align: center;
+    margin-top: 10px;
+}
+#myButton{
+    background-color: none;
+}
+.icons2{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    margin: auto;
+
+}
+#icon3{
+    text-align: center;
+}
+#icon3:hover{
+    animation-name: slideicon;
+    animation-duration: 3s;
+
+}
+@keyframes slideicon{
+    to{transform: translate(50%,-50%)}
+    50%{text-shadow: 0px 0px 10px yellow;}
+}
+.boxplus{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 3em;
+    border-radius: 10px;
+    transform:  scale(0.7, 0.7);
+}
+.container{
+    margin-top: 50px;
+        display: flex;
+    border: 10px solid black;
+    height: 90vh;
+   column-gap: 20px;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.box{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 3em;
+    border-radius: 10px;
+   
+}
+#box1{
+    background-color: red;
+    animation-name: slideleft;
+    animation-duration: 2s;
+}
+#box2{
+    background-color: yellow;
+    order: 1;
+    animation-name: sliderotate;
+    animation-duration: 2s;
+}
+
+#box3{
+    background-color: blue;
+    animation-name: slidescale;
+    animation-duration: 3s;
+}
+#box4{
+    background-color: green;
+    animation-name: slideskew;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+.icons{
+    text-align: center;
+
+}
+@keyframes slideleft{
+    from{transform: translate(100%, 100%);}
+}
+@keyframes sliderotate{
+    30%{transform: rotateX(180deg);}
+}
+@keyframes slidescale{
+    to{transform: scale(2, 2);}
+}
+@keyframes slideskew{
+    100%{transform: skewX(135deg);}
+}
+.fa-regular.fa-face-smile.fa-5x{
+    color:black;
+    margin-right: 20px;
+}
+.fa-regular.fa-face-smile.fa-5x:hover{
+    color:rgb(227, 57, 57);
+}
+.fa-regular.fa-face-smile-wink.fa-rotate-90.fa-6x{
+    color: green;
+}
+.fa-regular.fa-face-smile-wink.fa-rotate-90.fa-6x:hover{
+    color: rgb(184, 206, 21);
+}
+
+.gallery{
+    display: inline-block;
+    border: 2px solid rgb(113, 113, 113);
+    margin: 10px;
+    background-color: azure;
+    width: 200px;
+    
+}
+.gallery .description{
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+}
+.gallery:hover{
+    border: 5px solid yellow;
+}
+.gallery img{
+    width:100%;
+    height: auto;
+}
+.pagination{
+    text-align: center;
+
+}
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px ;
+    display:inline-block;
+    background-color: azure;
+}
+.pagination a.active{
+    font-weight: bold;
+    background-color: green;
+}
+.pagination a:hover:not(.active){
+    background-color: grey;
+}

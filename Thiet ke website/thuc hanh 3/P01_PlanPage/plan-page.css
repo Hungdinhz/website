@@ -1,0 +1,69 @@
+
+body {
+    min-height: 100vh;
+    width: 1180px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url(images/plan-page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-size: 16px;
+    margin:0 auto;
+    box-sizing: border-box;
+
+}
+
+section {
+   display: flex;
+   justify-content: center;
+   box-sizing: border-box;
+}
+
+article {
+    padding: 5px 30px;
+    background: #262626;
+    display: inline-block;
+    margin: 80px 20px 0 20px;
+    border: 5px solid #424242;
+    color: #a1a1a1;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+article h1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+.price {
+    font-size: 3em;
+    font-weight: bold;
+    color: #27dcc4;
+}
+
+ul {
+    padding: 0;
+}
+
+button {
+    background: #27dcc4;
+    color: #FFF;
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: #ACACAC;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px 0;
+
+}
+
+
+

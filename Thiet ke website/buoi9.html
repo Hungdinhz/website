@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight {
+            border-color: red !important;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body onunload="messages()">
+    <label for="Text">Enter your name: </label>
+    <input type="text" onfocus="myFunction(this)">
+   
+
+    <script>
+        function myFunction(x){
+            x.classList.add("highlight");
+        }
+        function messages(){
+            alert("This is...");
+
+        }
+    </script>
+
+</body>
+</html>

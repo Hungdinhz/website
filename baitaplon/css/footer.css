@@ -1,0 +1,147 @@
+:root {
+    --white-text: white;
+    --black-text: #000;
+    --font-text: #333;
+}
+
+/* Thuộc tính cho tất cả  */
+*{
+    box-sizing: inherit;
+}
+
+/* Đặt kích thước chữ 1rem = 10px */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ body{
+    margin: 0;
+ }
+
+ /* Bỏ gạch chân cho tất cả thẻ a */
+a {
+    text-decoration: none;
+}
+
+/* Phân cuói */
+footer {
+    clear: both; 
+    font-size: 1.6rem;
+}
+
+/* Đăng ký thêm */
+.footer__title {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333;
+    color: var(--white-text);
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.title__icons {
+    height: 70px;
+    width: 20vw;
+    max-width: 200px;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 10px;
+}
+.tilte__content {
+    max-width: 400px;
+    width: 40%;
+    height: 70px;
+    display: flex;
+    
+    column-gap: 10px;
+    align-items: center;
+}
+.tilte__content i {
+    display: flex;
+    min-width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title__input {
+    display: flex;
+}
+
+#footer__email {
+    padding-left: 10px;
+    border: none;
+    width: 30vw;
+    max-width: 700px;
+    height: 40px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.title__input div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 192, 13);
+    max-width: 70px;
+    width: 10vw;
+    height: 40px;
+    border-radius: 0 20px 20px 0;
+    color: var(--font-text);
+    cursor: pointer;
+}
+
+/* Thông tin */
+.support a{
+    display: block;
+}
+.support a:visited {
+    color: var(--font-text);
+}
+
+.support a:hover {
+    color: red;
+    transition: all 0.5s;
+}
+
+.support {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--font-text);
+}
+.support1 {
+    width: 200px;
+    max-width: 50%;
+    line-height: 2.5rem;
+    padding: 5px;
+}
+/* Tiêu đè */
+.support1 div{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.support1.information {
+    line-height: 2rem;
+}
+.support1.support__tel {
+    line-height: 16px;
+}
+
+.support1.support__tel a{
+    display: inline;
+    color: aqua;
+}
+.support1.support__tel a:hover{
+    color: red;
+    transition: 0.5s;
+}

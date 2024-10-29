@@ -1,0 +1,44 @@
+{
+    "sections": [
+        {
+            "title": "Thực phẩm tươi sống",
+            "products": [
+                {
+                    "name": "Rau muống hữu cơ",
+                    "image": "/baitaplon/image/raucu1.webp",
+                    "price": "9.999đ",
+                    "old_price": "15.000đ",
+                    "discount": "-33%"
+                },
+                {
+                    "name": "Rau rền hữu cơ",
+                    "image": "/baitaplon/image/raucu2.webp",
+                    "price": "7.000đ",
+                    "old_price": "14.000đ",
+                    "discount": "-50%"
+                }
+              
+            ]
+        },
+        {
+            "title": "Đồ dùng nhà bếp",
+            "products": [
+                {
+                    "name": "Chảo chiên trứng",
+                    "image": "/baitaplon/image/dungcu1.webp",
+                    "price": "40.000đ",
+                    "old_price": "60.000đ",
+                    "discount": "-33%"
+                },
+                {
+                    "name": "Khuôn silicone 6 Lỗ",
+                    "image": "/baitaplon/image/dungcu2.webp",
+                    "price": "35.000đ",
+                    "old_price": "70.000đ",
+                    "discount": "-50%"
+                }
+                
+            ]
+        }
+    ]
+}

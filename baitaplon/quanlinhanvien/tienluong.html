@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Điểm danh | Quản lý nhân viên</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="tienluong.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <!--===============================================================================================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">
+    <!--===============================================================================================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script type="text/javascript" src="splitpage.js"></script>
+</head> 
+<body onload="time()">
+	<div class="menu_bar">
+		<h2 class="logo"><i class='bx bxs-user-circle'></i><b> QUẢN LÝ </b><span>NHÂN VIÊN</span></h2>
+
+		<ul>
+			<li><a href="quanlinhanvien.html"><b>NHÂN VIÊN</b></a></li>
+			<li class="nowtab"><a href="">ĐIỂM DANH</a></li>
+			<li><a href="tienluong.html">TIỀN LƯƠNG</a></li>
+			<li><a href="">Tài Khoản</a>
+				<ul class="dropdown">
+					<li><a href="">Thông tin tk</a></li>
+					<li><a href="Login.html">Đăng xuất</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="container-fluid_al">
+        <div id="clock"></div>
+        <br>
+        <br>
+        <p class="timkiemnhanvien"><b>TÌM KIẾM NHÂN VIÊN:</b></p><Br><Br>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Nhập tên nhân viên cần tìm...">
+        <br>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <br>
+        <br>
+	</div>
+	<br>
+	<br>
+	</div>
+  <table class="table table-bordered" id="myTable">
+        <thead>
+            <tr>
+                <th width="auto">Tên Nhân Viên</th>
+                <th>Chức vụ</th>
+                <th>Lương cơ bản (đ / h)</th>
+                <th>Giờ công tháng</th>
+                <th>Khoản trừ</th>
+                <th>Tổng lương</th>
+                <th class="ghichu">Ghi chú</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTable">
+            <!-- Dữ liệu nhân viên sẽ được thêm vào đây -->
+        </tbody>
+
+    <script>
+        // Hàm tạo số giờ làm việc ngẫu nhiên từ 80 đến 200 giờ
+        function getRandomHours() {
+            return Math.floor(Math.random() * (200 - 80 + 1)) + 80;
+        }
+
+        // Hàm tính tổng lương
+        function calculateSalary(baseSalary, hoursWorked, deductions) {
+            return (baseSalary * hoursWorked) - deductions;
+        }
+
+        // Dữ liệu nhân viên
+        const employees = [
+            { name: "Võ Trường", position: "Admin", baseSalary: 50000, deductions: 200000 },
+            { name: "Trần Khả Ái", position: "Phục Vụ", baseSalary: 30000, deductions: 150000 },
+            { name: "Nguyễn Tấn Trung", position: "Dịch Vụ", baseSalary: 40000, deductions: 180000 },
+            { name: "Trần Trúc An", position: "Phục Vụ", baseSalary: 30000, deductions: 150000 },
+            { name: "Phạm Thu Cúc", position: "Thu Ngân", baseSalary: 35000, deductions: 160000 },
+            { name: "Nguyễn Thị Kim Ngân", position: "Phục Vụ", baseSalary: 30000, deductions: 150000 },
+            { name: "Nguyễn Anh Tuấn", position: "Dịch Vụ", baseSalary: 40000, deductions: 180000 },
+            { name: "Huỳnh Cẩm Thu", position: "Tư Vấn", baseSalary: 45000, deductions: 170000 },
+            { name: "Nguyễn Xuân Ly", position: "Tư Vấn", baseSalary: 45000, deductions: 170000 },
+            { name: "Hoàng Xuân Nam", position: "QL Kho", baseSalary: 50000, deductions: 200000 }
+        ];
+
+        // Tính toán và hiển thị kết quả
+        const employeeTable = document.getElementById('employeeTable');
+        employees.forEach(employee => {
+            const hoursWorked = getRandomHours();
+            const totalSalary = calculateSalary(employee.baseSalary, hoursWorked, employee.deductions);
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${employee.name}</td>
+                <td>${employee.position}</td>
+                <td>${employee.baseSalary}</td>
+                <td>${hoursWorked}</td>
+                <td>${employee.deductions}</td>
+                <td>${totalSalary}</td>
+                <td><input type="text" name="ghichu"></td>
+            `;
+            employeeTable.appendChild(row);
+        });
+    </script>
+
+<div id="pageNavPosition" class="text-right"></div>
+<script type="text/javascript">
+    var pager = new Pager('myTable', 5);
+    pager.init();
+    pager.showPageNav('pager', 'pageNavPosition');
+    pager.showPage(1);
+
+    const today = new Date();
+    const date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+    
+    document.querySelectorAll('.currentDate').forEach(function(cell) {
+        cell.textContent = date;
+    });
+</script>
+<hr class="hr1">
+<script src="jquery.min.js"></script>
+<script type="text/javascript" src="search.js"></script>
+<script type="text/javascript"></script>
+</body>
+</html>
