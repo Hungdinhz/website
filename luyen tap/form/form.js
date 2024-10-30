@@ -1,9 +1,12 @@
 
 let inputAnpha = document.getElementById('anpha');
 
+let isAnpha = /\d{1,4}\D*@gmail.com/;
 inputAnpha.onchange = function() {
-    if(inputAnpha.value < 6){
-      
+    if(!isAnpha.test(inputAnpha.value)){
+      alert("Sai");
+    }else{
+      alert('Dung')
     }
 
 }
