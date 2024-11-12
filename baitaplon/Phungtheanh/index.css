@@ -1,13 +1,15 @@
 * {
     box-sizing: border-box;
   }
-  body {
+  main1 {
     display: flex;
     justify-content: center;
+    font-size: 1.6rem;
   }
   p {
     margin: 0;
   }
+
   
   img {
     max-width: 100%;
@@ -15,7 +17,7 @@
   }
   
   .cart-item {
-    border-radius: ;
+    border-radius: 10px;
     margin: 50px auto 0 auto;
   }
   .cart-item .item-img {
@@ -34,7 +36,7 @@
   .category {
     font-size: 10px;
   }
-  .title {
+  .title1 {
     font-size: 12px;
     font-weight: bold;
   }
@@ -254,3 +256,61 @@
   display: block;
   margin-bottom: 5px;
 }
+footer{
+  margin-top: 30px;
+}
+a{
+  text-decoration: none;
+}
+ /* CSS cho thông báo */
+ .notification {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Hiệu ứng mờ dần */
+}
+
+html, body {
+  height: 100%; /* Đặt chiều cao cho body */
+  margin: 0; /* Bỏ margin mặc định */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Đặt hướng theo cột */
+}
+
+main {
+  flex: 1; /* Đảm bảo main chiếm không gian còn lại */
+}
+
+/* Các kiểu cho footer */
+footer {
+  background-color: #f8f9fa; /* Màu nền cho footer */
+  padding: 20px;
+}
+
+.btn-cart {
+  display: flex; /* Sử dụng flexbox để căn giữa nội dung */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  width: 130px; /* Chiều rộng cố định */
+  height: 50px; /* Chiều cao cố định */
+  /* Màu nền cho nút */
+  color: white; /* Màu chữ cho nút */
+  border: none; /* Bỏ đường viền */
+  border-radius: 5px; /* Bo góc cho nút */
+  cursor: pointer; /* Hiệu ứng con trỏ khi di chuột */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+
+

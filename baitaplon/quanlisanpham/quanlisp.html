@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí sản phẩm</title>
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="quanlisp.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-item">
+                <i class="fa-solid fa-list header-icon1"></i>
+                <h2>Danh sách sản phẩm</h2>
+            </div>
+            <ul>
+                <li class="header-item">
+                    <a href="qltk.html">
+                        <i class="fa-solid fa-money-check-dollar header-icon2"></i>
+                        <span>Thống kê</span>
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a href="qldh.html">
+                        <i class="fa-solid fa-bag-shopping header-icon2"></i>
+                        <span>Đơn hàng</span>
+                    </a>
+                </li>
+               </ul>
+            <!-- <div class="header-item">
+                <a href="qldh.html">Đơn hàng</a>
+                <a href="qltk.html">Thống kê</a>
+            </div> -->
+        </div>
+        <div class="main">
+            <div class="conten">
+                <div class="file">
+                    <div class="file1">
+                        <i class="fa-solid fa-plus"></i>
+                        <a href="add_sp.html" class="file1-chu">Tạo mới sản phẩm</a>
+                    </div>
+                    <div class="file2">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        <span class="file2-chu">Tải từ file</span>
+                    </div>
+                    <div class="file3">
+                        <i class="fa-solid fa-print"></i>
+                        <span class="file3-chu">In dư liệu</span>
+                    </div>
+                    <div class="file4">
+                        <i class="fa-solid fa-copy"></i>
+                        <span class="file4-chu">Sao chép</span>
+                    </div>
+                    <div class="file5">
+                        <i class="fa-solid fa-file-export"></i>
+                        <span class="file5-chu">Xuất file</span>
+                    </div>
+                    <div class="file6">
+                        <i class="fa-solid fa-trash"></i>
+                        <span class="file6-chu">Xóa tất cả</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="filter">
+                    <div class="filter_1">
+                        <p>Hiện</p>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <p>danh mục</p>
+                    </div>
+                    <div class="filter_2">
+                        <label for="idname">Tìm kiếm:</label>
+                        <input type="text" id="idname">
+                    </div>
+                </div>
+                <div class="table">
+                    <table border="1">
+                        <tr>
+                            <th><input type="checkbox" id="select-all"></th>
+                            <td>Mã sản phẩm</td>
+                            <td>Tên sản phẩm</td>
+                            <td>Ảnh</td>
+                            <td>Số lượng</td>
+                            <td>Tình trạng</td>
+                            <td>Giá tiền</td>
+                            <td>Danh mục</td>
+                            <td>Chức năng</td>
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox" id="select-all"></th>
+                            <td>71309005</td>
+                            <td>Gà ủ muối</td>
+                            <td>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqdrHHkbj0-fkEAaaOjD6O_WMqgL4kGIcOYA&s">
+                            </td>
+                            <td>40</td>
+                            <td>
+                                <span class="status">Còn hàng</span>
+                            </td>
+                            <td>150.000 đ</td>
+                            <td>Đồ ăn</td>
+                            <td>
+                                <div class="icon">
+                                    <i class="fa-solid fa-trash icon-dele"></i>
+                                    <i class="fa-solid fa-pen-to-square icon-fix"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox" id="select-all"></th>
+                            <td>61304005</td>
+                            <td>Rustic Wooden Coat</td>
+                            <td>
+                                <img src="https://bizweb.dktcdn.net/thumb/medium/100/419/628/products/chocolate-fudge-cake-b7d1615f-96f3-4256-971f-ae77ec81169a.png?v=1645361444613">
+                            </td>
+                            <td>20</td>
+                            <td>
+                                <span class="status">Còn hàng</span>
+                            </td>
+                            <td>1.560.000 đ</td>
+                            <td>Đồ ăn</td>
+                            <td>
+                                <div class="icon">
+                                    <i class="fa-solid fa-trash icon-dele"></i>
+                                    <i class="fa-solid fa-pen-to-square icon-fix"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox" id="select-all"></th>
+                            <td>62304003</td>
+                            <td>Dầu gội Pantene chính hãng</td>
+                            <td>
+                                <img src="https://cooponline.vn/wp-content/uploads/2022/08/dau-goi-dau-pantene-ngan-rung-toc-1800ml-20220923.jpg">
+                            </td>
+                            <td>100</td>
+                            <td>
+                                <span class="status">Còn hàng</span>
+                            </td>
+                            <td>134.000 đ</td>
+                            <td>Đồ da dụng</td>
+                            <td>
+                                <div class="icon">
+                                    <i class="fa-solid fa-trash icon-dele"></i>
+                                    <i class="fa-solid fa-pen-to-square icon-fix"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox" id="select-all"></th>
+                            <td>72638003</td>
+                            <td>Bánh cuộn kem chocolate</td>
+                            <td>
+                                <img src="https://bizweb.dktcdn.net/thumb/medium/100/419/628/products/img-cake-11-458x493.jpg?v=1645678965207">
+                            </td>
+                            <td>30</td>
+                            <td>
+                                <span class="status">Còn hàng</span>
+                            </td>
+                            <td>110.000 đ</td>
+                            <td>Đồ ăn</td>
+                            <td>
+                                <div class="icon">
+                                    <i class="fa-solid fa-trash icon-dele"></i>
+                                    <i class="fa-solid fa-pen-to-square icon-fix"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox" id="select-all"></th>
+                            <td>82716001</td>
+                            <td>Quần sort nam</td>
+                            <td>
+                                <img  src="data:image/jpeg;base64,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">
+                            </td>
+                            <td>40</td>
+                            <td>
+                                <span class="status">Còn hàng</span>
+                            </td>
+                            <td>290.000 đ</td>
+                            <td>Thòi trang</td>
+                            <td>
+                                <div class="icon">
+                                    <i class="fa-solid fa-trash icon-dele"></i>
+                                    <i class="fa-solid fa-pen-to-square icon-fix"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox" id="select-all"></th>
+                            <td>72109001</td>
+                            <td>Áo sơ mi nam cotton</td>
+                            <td>
+                                <img src="data:image/jpeg;base64,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">
+                            </td>
+                            <td>40</td>
+                            <td>
+                                <span class="status">Còn hàng</span>
+                            </td>
+                            <td>500.000 đ</td>
+                            <td>Thời trang</td>
+                            <td>
+                                <div class="icon">
+                                    <i class="fa-solid fa-trash icon-dele"></i>
+                                    <i class="fa-solid fa-pen-to-square icon-fix"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox" id="select-all"></th>
+                            <td>72109004</td>
+                            <td>Giày thể thao nam GTT23.4</td> 
+                            <td>
+                                <img src="https://bizweb.dktcdn.net/100/405/002/products/130.png?v=1692952475837">
+                            </td>
+                            <td>40</td>
+                            <td>
+                                <span class="status">Còn hàng</span>
+                            </td>
+                            <td>600.000 đ</td>
+                            <td>Thời trang</td>
+                            <td>
+                                <div class="icon">
+                                    <i class="fa-solid fa-trash icon-dele"></i>
+                                    <i class="fa-solid fa-pen-to-square icon-fix"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
+</body>
+</html>

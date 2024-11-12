@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="Login.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<script type="text/javascript">
+		var check_id = /^\d{6}$|^[A-Za-z]{2}\d{4}$/;
+		var check_pass = /^\d{4}$/;
+
+		function checknull(txt){
+			if(txt.value.length == 0)
+				return true;
+			else {
+				return false;
+			}
+		}
+		function StringMatch(txt, reg){
+			return reg.test(txt.value);
+		}
+
+		function validform(f){
+			if(checknull(f.tk) || checknull(f.mk)){
+				alert("Vui lòng nhập đầy đủ thông tin tài khoản và mật khẩu");
+				f.tk.focus();
+				return;
+			}
+			
+			if(!StringMatch(f.tk, check_id)){
+				alert("Tài khoản không hợp lệ");
+				f.tk.focus();
+				return;
+			}
+
+			if(!StringMatch(f.mk, check_pass)){
+				alert("Mật khẩu không chính xác");
+				f.mk.focus();
+				return;
+			}
+			alert("Đăng nhập thành công");
+			f.submit();
+			window.location.href = "../quanlisanpham/quanlisp.html";
+		}
+	</script>
+</head>
+
+<body>
+	<header><b>QUẢN LÍ SẢN PHẨM</b></header>
+	<form name="frmAccount" action="abc.jsp" method="POST">
+	<div class="login">
+		<h1>Đăng nhập tài khoản</h1>
+		<div>
+			<input type="text" placeholder="Tài khoản" name="tk">
+			<i class='bx bxs-user'></i>
+		</div>
+		<div>
+			<input type="password" placeholder="Mật khẩu" name="mk">
+			<i class='bx bxs-lock-alt' ></i>
+		</div>
+		<input type="button" value="Đăng nhập" onclick="validform(document.forms.frmAccount);">
+	</div>
+	</form>
+</body>
+</html>

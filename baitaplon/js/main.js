@@ -1,6 +1,11 @@
 
+
 let displayAside = document.getElementById('list__product');
 console.log(displayAside);
+
+//displayAside.style.display = "none";
+
+
 
 const listImage = document.querySelector('.image__list');
 const imgs = document.querySelectorAll('.image__list img');
@@ -18,6 +23,8 @@ const handleChangeImage = function(){
         current++;
       
     }
+    
+
     document.querySelector('.active').classList.remove('active');
     document.querySelector('.image-index-' + current).classList.add('active');
     listImage.style.transform = `translateX(${100 * -1 * current}%)`;
@@ -39,14 +46,18 @@ btnLeft.addEventListener('click', () => {
  
     }else{
         current--;
+      
     }
     document.querySelector('.active').classList.remove('active');
     document.querySelector('.image-index-' + current).classList.add('active');
     listImage.style.transform = `translateX(${100 * -1 * current}%)`;
     handleEventChangeSlide = setInterval(handleChangeImage, 5000);
+
 });
 
+
 const deal = document.querySelectorAll(".selection.ticket__node--copy");
+    
 let lengthDeal = deal.length;
 
 for(let i = 0; i < lengthDeal; i++){
@@ -73,6 +84,7 @@ const selectBox5 = function(event, name, number) {
 selectBox5(select1, '.box5', 0);
 selectBox5(select2, '.box5', 1);
 selectBox5(select3, '.box5', 2);
+
 
 const listTypeBox6 = document.querySelector('.box6 .Type');
 
@@ -108,8 +120,6 @@ for(let i = 0; i < lengthShopping; i++){
         }, 1000)
     });
 }
-
-
 
 
 

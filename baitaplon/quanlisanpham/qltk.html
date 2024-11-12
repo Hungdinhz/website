@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí siêu thị</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="qltk.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="header">
+                <h2>Quản lí thống kê</h2>
+            </div>
+    
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>236</h3>
+                    <p>Tổng số khách hàng</p>
+                </div>
+                <div class="stat-card">
+                    <h3>180</h3>
+                    <p>Tổng doanh thu (triệu đồng)</p>
+                </div>
+                <div class="stat-card">
+                    <h3>1538</h3>
+                    <p>Tổng số hóa đơn</p>
+                </div>
+                <div class="stat-card">
+                    <h3>364</h3>
+                    <p>Tổng số đơn</p>
+                </div>
+            </div>
+    
+            <div class="charts">
+                <div class="chart1">
+                    <h4>Doanh thu trong năm</h4>
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="chart2">
+                    <h4>Tỉ lệ</h4>
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            // Line chart (Doanh thu)
+            const ctx = document.getElementById('myChart');
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+                    datasets: [{
+                        label: 'Triệu đồng',
+                        data: [12, 19, 3, 5, 2, 3, 30, 25, 0, 10, 3, 10],
+                        borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    
+            // Pie chart (Tỉ lệ)
+            const pieCtx = document.getElementById('pieChart').getContext('2d');
+            const pieChart = new Chart(pieCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Hàng đã bán (%)', 'Hàng hoàn lại (%)', 'Hàng tồn kho (%)'],
+                    datasets: [{
+                        data: [50, 30, 20],
+                        backgroundColor: ['#36a2eb', '#ff6384', '#ffcd56'],
+                    }]
+                },
+                options: {
+                    responsive: true
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

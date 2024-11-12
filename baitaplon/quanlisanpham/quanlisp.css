@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    margin: 0;
+    background-color: #f5f7fa;
+}
+.container{
+    width: 98%;
+    margin: 0 auto;
+    height: 1300px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-left: 5px solid yellow;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+}
+.header-item{
+    display: flex;
+    align-items: center;
+}
+.header h2{
+    margin: 0 5px;
+}
+.header-icon1{
+    font-size: larger;
+    margin-left: 10px;
+    font-weight: bold;
+}
+ .header li{
+    display: inline;
+    margin-left: 20px;
+}
+.header-item a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    margin: 0 10px;
+    cursor: pointer;
+    color: inherit;
+} 
+.header-item a:hover{
+    color: #766d6d;
+}
+.main{
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 1240px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    /*position: relative;*/
+}
+.conten{
+    /*position: absolute;*/
+    padding-top: 20px;
+    margin-top: 15px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.file{
+    margin-left: 20px;
+    display: flex;
+}
+hr{
+    margin: 15px 3px 0px 3px;
+
+}
+.main a{
+    text-decoration: none;
+    color: rgb(56, 103, 65);;
+}
+.file1{
+    background-color: rgb(132, 242, 152);
+    padding: 5px;
+    color: rgb(56, 103, 65);
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.file1:hover{
+    background-color: rgb(86, 217, 119);
+}
+.file2{
+    background-color: rgb(205, 242, 132);
+    padding: 5px;
+    color: rgb(94, 114, 52);
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.file3{
+    background-color: rgb(136, 170, 239);
+    padding: 5px;
+    color: rgb(42, 68, 119);
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.file4{
+    background-color: rgb(117, 242, 140);
+    padding: 5px;
+    color: rgb(34, 111, 48);
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.file5{
+    background-color: rgb(242, 145, 132);
+    padding: 5px;
+    color: rgb(154, 62, 50);
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.file6{
+    background-color: rgb(143, 152, 145);
+    padding: 5px;
+    color: rgb(82, 90, 83);
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.filter_1{
+    display: flex;
+    font-size: large;
+}
+select{
+    background-color: #ebe9e9;
+    width: 60px;
+    height: 25px;
+    margin: 16px 3px 0 0;
+    border-radius: 5px;
+    border: 1px solid #c2bcbc;
+}
+.filter_1 p{
+    margin-right: 3px;
+}
+.filter_2{
+    margin-top: 10px;
+    border: 1px solid #dcd9d9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.filter_2 input{
+    background-color: #ebe9e9;
+    border-radius: 5px;
+    border: 1px solid #dcd9d9;
+    font-size: large;
+    margin: 10px 10px 10px 0;
+}
+.filter_2 label{
+    font-weight: bold;
+    font-size: large;
+    margin-left: 10px;
+}
+.table{
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.table table{
+    width: 100%;
+    border: 1px solid #dcd9d9;
+    border-collapse: collapse;
+}
+tr:first-child{
+    background-color: #ebe9e9;
+    font-weight: bold;
+}
+.table td{
+   padding: 20px;
+   
+}
+.input{
+    padding: 10px;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+.status{
+    background-color: rgb(97, 237, 127);
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(53, 150, 44);
+    font-weight: bolder;
+}
+.icon-dele{
+    background-color: rgb(242, 164, 190);
+    color: rgb(231, 87, 87);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.icon-fix{
+    background-color: rgb(237, 241, 158);
+    color: rgb(213, 227, 50);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media (max-width: 856px) {
+    .header h2 , span, .header-icon1, .header-icon2{
+        font-size: 18px;
+    }
+    .table th, .table td {
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header h2 , span, .header-icon1, .header-icon2{
+        font-size: 14px;
+    }
+
+    .table img {
+        max-width: 80px;
+    }
+    .table th, .table td {
+        padding: 0px;
+        font-size: 13px;
+    }
+    .icon, .table span {
+        font-size: 13px;
+    }
+    .file{
+        flex-direction: column;
+        margin: 5px;
+    }
+    .filter {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .filter label, input, p, select{
+        font-size: 15px;
+    }
+}
+
+

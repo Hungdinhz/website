@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Điểm danh | Quản lý nhân viên</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="tienluong.css">
+	<link rel="stylesheet" type="text/css" href="style2.css">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -29,21 +29,37 @@
     <script type="text/javascript" src="splitpage.js"></script>
 </head> 
 <body onload="time()">
-	<div class="menu_bar">
-		<h2 class="logo"><i class='bx bxs-user-circle'></i><b> QUẢN LÝ </b><span>NHÂN VIÊN</span></h2>
+	   <div class="menu_bar">
+        <h2 class="logo"><i class='bx bxs-user-circle'></i><b> QUẢN LÝ </b><span>NHÂN VIÊN</span></h2>
 
-		<ul>
-			<li><a href="quanlinhanvien.html"><b>NHÂN VIÊN</b></a></li>
-			<li class="nowtab"><a href="">ĐIỂM DANH</a></li>
-			<li><a href="tienluong.html">TIỀN LƯƠNG</a></li>
-			<li><a href="">Tài Khoản</a>
-				<ul class="dropdown">
-					<li><a href="">Thông tin tk</a></li>
-					<li><a href="Login.html">Đăng xuất</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div>
+        <ul class="navbar_pc">
+            <li id="nowtab" class="navbar_pc_list"><a href="" class="navbar_pc_link"><b>NHÂN VIÊN</b></a></li>
+            <li class="navbar_pc_list"><a href="diemdanh.html" class="navbar_pc_link">ĐIỂM DANH</a></li>
+            <li class="navbar_pc_list"><a href="tienluong.html" class="navbar_pc_link">TIỀN LƯƠNG</a></li>
+            <li class="navbar_pc_list"><a href="" class="navbar_pc_link">Tài Khoản</a>
+                <ul class="dropdown">
+                    <li><a href="Login.html" class="navbar_pc_drop">Đăng xuất</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <label for="nav_mobile_input" class="navbar_btn">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></label>
+
+    <input type="checkbox" name="" id="nav_mobile_input" class="nav_input">
+
+        <label for="nav_mobile_input" class="nav_overlay"></label>
+        <ul class="navbar_mobile">
+            <label for="nav_mobile_input" class="navbar_mobile_close">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></label>
+            <li class="navbar_mobile_list"><a href="" class="navbar_mobile_link"><b>NHÂN VIÊN</b></a></li>
+            <li class="navbar_mobile_list"><a href="diemdanh.html" class="navbar_mobile_link">ĐIỂM DANH</a></li>
+            <li class="navbar_mobile_list"><a href="tienluong.html" class="navbar_mobile_link">TIỀN LƯƠNG</a></li>
+            <li class="navbar_mobile_list"><a href="Login.html" class="navbar_mobile_link">ĐĂNG XUẤT</a>
+            </li>
+        </ul>
+</div>
 	
 	<div class="container-fluid_al">
         <div id="clock"></div>
@@ -59,7 +75,36 @@
 	<br>
 	<br>
 	</div>
-  <table class="table table-bordered" id="myTable">
+  <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Tính Lương Nhân Viên</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .hr1 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bảng Tính Lương Nhân Viên</h2>
+    <table class="table table-bordered" id="myTable">
         <thead>
             <tr>
                 <th width="auto">Tên Nhân Viên</th>
@@ -74,6 +119,9 @@
         <tbody id="employeeTable">
             <!-- Dữ liệu nhân viên sẽ được thêm vào đây -->
         </tbody>
+    </table>
+    <div id="pageNavPosition" class="text-right"></div>
+    <hr class="hr1">
 
     <script>
         // Hàm tạo số giờ làm việc ngẫu nhiên từ 80 đến 200 giờ
@@ -117,23 +165,22 @@
             `;
             employeeTable.appendChild(row);
         });
+
+        var pager = new Pager('myTable', 5);
+        pager.init();
+        pager.showPageNav('pager', 'pageNavPosition');
+        pager.showPage(1);
+
+        const today = new Date();
+        const date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+        
+        document.querySelectorAll('.currentDate').forEach(function(cell) {
+            cell.textContent = date;
+        });
     </script>
+</body>
+</html>
 
-<div id="pageNavPosition" class="text-right"></div>
-<script type="text/javascript">
-    var pager = new Pager('myTable', 5);
-    pager.init();
-    pager.showPageNav('pager', 'pageNavPosition');
-    pager.showPage(1);
-
-    const today = new Date();
-    const date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
-    
-    document.querySelectorAll('.currentDate').forEach(function(cell) {
-        cell.textContent = date;
-    });
-</script>
-<hr class="hr1">
 <script src="jquery.min.js"></script>
 <script type="text/javascript" src="search.js"></script>
 <script type="text/javascript"></script>

@@ -66,6 +66,8 @@ section {
     background-color: red;
     color: var(--white-text);
     cursor: pointer;
+    float: right;
+    margin-top: 10px;
 }
 
 .map {

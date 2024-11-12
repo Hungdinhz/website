@@ -116,7 +116,7 @@ aside{
 }
 .bonus__node--link {
     display: block;
-    
+    color: #333;
 }
 .bonus__node--link:visited {
     color: #333;
@@ -256,6 +256,8 @@ section {
 }
 .image {
     width: 100%;
+    height: 600px;
+    object-fit: contain;
     overflow: hidden;
 }
 .image__list {
@@ -327,7 +329,8 @@ section {
     border: 1px dashed black;
     background-color: white;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .ma {
@@ -342,6 +345,7 @@ section {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    
 }
 
 .selection {
@@ -353,12 +357,14 @@ section {
 }
 
 .selection.ticket__node--copy {
+    padding: 2px;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
     background-color: rgb(235, 43, 43);
     color: var(--white-text);
     cursor: pointer;
+    
 }
 .selection.ticket__node--if {
     text-align: end;
@@ -397,11 +403,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 5px;
+    row-gap: 15px;
+
 }
 .vegetable__list li {
     padding: 5px;
-    width: 33%;
+    width: 30%;
     min-width: 150px;
     border: 1px solid;
     border-radius: 10px;
@@ -431,8 +438,8 @@ section {
 .vegetable__link {
     margin-bottom: 10px;
 }
-.vegetable__list li a:hover img{
-    transform: translateY(-10px) scale(1.05);
+.vegetable__list li:hover {
+    transform: translateY(-5px) scale(1.05);
     transition: 0.25s;
 }
 
@@ -477,15 +484,14 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 5px;
+    row-gap: 15px;
 }
 .kitchenTool__list li {
     padding: 5px;
-    width: 33%;
+    width: 30%;
     min-width: 150px;
     border: 1px solid;
     border-radius: 10px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -512,8 +518,8 @@ section {
 .kitchenTool__link {
     margin-bottom: 10px;
 }
-.kitchenTool__list li a:hover img{
-    transform: translateY(-10px) scale(1.05);
+.kitchenTool__list li:hover{
+    transform: translateY(-5px) scale(1.05);
     transition: 0.25s;
 }
 
@@ -555,6 +561,8 @@ section {
     column-gap: 30px;
     row-gap: 10px;
     margin-bottom: 30px;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .news__image {
@@ -562,7 +570,7 @@ section {
 }
 .news {
     background-color: white;
-    width: 250px;
+    width: 230px;
     height: 300px;
     max-width: 45%;
     padding: 5px;
@@ -710,10 +718,9 @@ section {
     height: 200px;
 }
 
-.Type__name img:hover {
+.Type__name:hover {
     transform: translateY(-5px) scale(1.05);
     transition: 0.25s;
-
 }
 
 .Type {
@@ -743,6 +750,7 @@ section {
 .Type__name--link2 {
     display: block;
     margin-bottom: 5px;
+    color: var(--font-text);
 }
 
 .Type__name--link2:visited {

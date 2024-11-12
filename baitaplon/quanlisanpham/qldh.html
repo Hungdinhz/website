@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí siêu thị</title>
+    <link rel="stylesheet" href="qldh.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+           <div class="header">
+            <h2>Quản lí đơn hàng</h2>
+            <a href="add_dh.html">Tạo đơn hàng mới</a>
+           </div>
+        </header>
+        <div class="status">
+            <div class="item1">
+                <h3>ĐƠN HÀNG MỚI</h3>
+                <p>Tông đơn hàng: 2</p>
+                <p>Tổng tiền 295.000đ</p>
+            </div>
+            <div class="item2">
+                <h3>ĐÃ XÁC NHẬN</h3>
+                <p>Tông đơn hàng: 0</p>
+                <p>Tổng tiền: 0đ</p>
+            </div>
+            <div class="item3">
+                <h3>ĐANG VẬN CHUYỂN</h3>
+                <p>Tông đơn hàng: 0</p>
+                <p>Tổng tiền: 0đ</p>
+            </div>
+            <div class="item4">
+                <h3>HOÀN TẤT</h3>
+                <p>Tông đơn hàng: 0</p>
+                <p>Tổng tiền: 0đ</p>
+            </div>
+            <div class="item5">
+                <h3>BỊ HỦY</h3>
+                <p>Tổng đơn hàng: 2</p>
+                <p>Tổng tiền: 100.000đ</p>
+            </div>
+        </div>
+        <div class="table">
+            <table border="1">
+                <tr>
+                    <td colspan="9" class="table-loc">
+                        <div class="filter">
+                            <div class="filter_1">
+                                <select class="filter-item group1">
+                                    <option selected disabled>Chọn tạc vụ</option>
+                                    <option></option>
+                                    <option></option>
+                                </select>
+                                <span class="filter-item group2">Áp dùng</span>
+                            </div>
+                            <div class="filter_2">
+                                <select class="filter-item group1">
+                                    <option selected disabled>Tất cả</option>
+                                    <option></option>
+                                    <option></option>
+                                </select>
+                                <div class="lookfor">
+                                    <input type="text">
+                                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                                </div>
+                                <span class="filter-item group2">Xuất file</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" id="select-all"></th>
+                    <td>Đơn hàng</td>
+                    <td>Ngày đặt</td>
+                    <td>Khách hàng</td>
+                    <td>Sản phẩm</td>
+                    <td>Tổng tiền</td>
+                    <td>Hình thức thanh toán</td>
+                    <td>Thanh toán</td>
+                    <td>Trạng thái</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" id="select-all"></th>
+                    <td class="blue">#ORDER0011</td>
+                    <td>
+                        <span>10/03/2021</span> <br>
+                        <span>11:53:36</span>
+                    </td>
+                    <td>
+                       <span>Ngọc Thuận</span> <br>
+                       <span>Điện thoại: 0392588422</span> <br>
+                       <span>Địa chỉ: 81 Trần Cung Hà Nội</span>
+                    </td>
+                    <td>
+                       Chuối chà - 1
+                    </td>
+                    <td>15.000đ</td>
+                    <td>Thu tiền tận nơi - COD</td>
+                    <td>
+                        <span class="black">Chưa thanh toán</span>
+                    </td>
+                    <td>Đang xử lí</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" id="select-all"></th>
+                    <td class="blue">#ORDER0031</td>
+                    <td>
+                        <span>11/11/2022</span> <br>
+                        <span>14:33:36</span>
+                    </td>
+                    <td>
+                       <span>Ngọc Hùng</span> <br>
+                       <span>Điện thoại: 0962588422</span> <br>
+                       <span>Địa chỉ: 81 Trần Cung Hà Nội</span>
+                    </td>
+                    <td>
+                       Bánh kem socola
+                    </td>
+                    <td>155.000đ</td>
+                    <td>Thu tiền tận nơi - COD</td>
+                    <td>
+                        <span class="black">Chưa thanh toán</span>
+                    </td>
+                    <td>Đang xử lí</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" id="select-all"></th>
+                    <td class="blue">#OABER0011</td>
+                    <td>
+                        <span>22/03/2024</span> <br>
+                        <span>10:00:36</span>
+                    </td>
+                    <td>
+                       <span>Bình Minh</span> <br>
+                       <span>Điện thoại: 0969588422</span> <br>
+                       <span>Địa chỉ: 81 Hoàng Quốc Việt, Hà Nội</span>
+                    </td>
+                    <td>
+                       Gà ủ muối
+                    </td>
+                    <td>140.000đ</td>
+                    <td>Thu tiền tận nơi - COD</td>
+                    <td>
+                        <span class="black">Chưa thanh toán</span>
+                    </td>
+                    <td>Đang xử lí</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" id="select-all"></th>
+                    <td class="blue">#ORDER1231</td>
+                    <td>
+                        <span>13/03/2021</span> <br>
+                        <span>9:50:36</span>
+                    </td>
+                    <td>
+                       <span>Đình Hùng</span> <br>
+                       <span>Điện thoại: 0969941349</span> <br>
+                       <span>Địa chỉ: 81 Cầu Giấy Hà Nội</span>
+                    </td>
+                    <td>
+                       Bánh kem dâu tây
+                    </td>
+                    <td>90.000đ</td>
+                    <td>Thu tiền tận nơi - COD</td>
+                    <td>
+                        <span class="black">Chưa thanh toán</span>
+                    </td>
+                    <td>Đang xử lí</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" id="select-all"></th>
+                    <td class="blue">#ABCDR0011</td>
+                    <td>
+                        <span>10/03/2021</span> <br>
+                        <span>11:53:36</span>
+                    </td>
+                    <td>
+                       <span>Thế Công</span> <br>
+                       <span>Điện thoại: 0392588422</span> <br>
+                       <span>Địa chỉ: 26 Xuân Thủy Hà Nôi</span>
+                    </td>
+                    <td>
+                       Chuối chà - 1
+                    </td>
+                    <td>1000.000đ</td>
+                    <td>Thu tiền tận nơi - COD</td>
+                    <td>
+                        <span class="black">Chưa thanh toán</span>
+                    </td>
+                    <td>Đang xử lí</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" id="select-all"></th>
+                    <td class="blue">#OCHJR0011</td>
+                    <td>
+                        <span>10/03/2021</span> <br>
+                        <span>11:53:36</span>
+                    </td>
+                    <td>
+                       <span>Thế Anh</span> <br>
+                       <span>Điện thoại: 0392588422</span> <br>
+                       <span>Địa chỉ: 30 Xuân Đỉnh Hà Nội</span>
+                    </td>
+                    <td>
+                       Chuối chà - 1
+                    </td>
+                    <td>200.000đ</td>
+                    <td>Thu tiền tận nơi - COD</td>
+                    <td>
+                        <span class="black">Chưa thanh toán</span>
+                    </td>
+                    <td>Đang xử lí</td>
+                </tr>
+                <tr>
+                    <th><input type="checkbox" id="select-all"></th>
+                    <td class="blue">#MJFDR0011</td>
+                    <td>
+                        <span>10/03/2021</span> <br>
+                        <span>11:53:36</span>
+                    </td>
+                    <td>
+                       <span>Tuấn Phong</span> <br>
+                       <span>Điện thoại: 0392588422</span> <br>
+                       <span>Địa chỉ: Cổ Nhuế 1, Hà Nội</span>
+                    </td>
+                    <td>
+                       Chuối chà - 1
+                    </td>
+                    <td>10.000đ</td>
+                    <td>Thu tiền tận nơi - COD</td>
+                    <td>
+                        <span class="black">Chưa thanh toán</span>
+                    </td>
+                    <td>Đang xử lí</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>

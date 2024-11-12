@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí sản phẩm</title>
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="add_sp.css">
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>Danh sách sản phẩm / Thêm sản phẩm</p>
+        </header>
+        <div class="main">
+            <div class="conten">
+                <h1>Tạo sản phẩm mới</h1>
+                <div class="function">
+                    <a href="#" class="function1">
+                        <i class="fa-solid fa-file-circle-plus"></i>
+                        <span>Thêm nhà cung cấp</span>
+                    </a>
+                    <a href="#" class="function2">
+                        <i class="fa-solid fa-file-circle-plus"></i>
+                        <span>Thêm danh mục</span>
+                    </a>
+                    <a href="#" class="function3">
+                        <i class="fa-solid fa-file-circle-plus"></i>
+                        <span>Thêm tình trạng</span>
+                    </a>
+                </div>
+                <hr>
+                <form class="form" onsubmit="return validateForm()">
+                    <div class="form-1">
+                        <div class="item">
+                            <label for="idmota">Mã sản phẩm</label>
+                            <input id="idmota" type="text" required>
+                        </div>
+                        <div class="item">
+                            <label for="idname">Tên sản phẩm</label>
+                            <input id="idname" type="text" required>
+                        </div>
+                        <div class="item">
+                            <label for="idnum">Số lượng</label>
+                            <input id="idnum" type="text" required>
+                        </div>
+                        <div class="item">
+                            <label>Tình trạng</label>
+                            <select name="status" required>
+                                <option value="">-Chọn tình trạng-</option>
+                                <option value="Còn hàng">Còn hàng</option>
+                                <option value="Hết hàng">Hết hàng</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-1">
+                        <div class="item">
+                            <label>Danh mục</label>
+                            <select name="category" required>
+                                <option value="">-Chọn danh mục-</option>
+                                <option value="Đồ ăn">Đồ ăn</option>
+                                <option value="Đồ gia dụng">Đồ gia dụng</option>
+                                <option value="Thời trang">Thời trang</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <label>Nhà cung cấp</label>
+                            <select name="supplier" required>
+                                <option value="">-Chọn nhà cung cấp-</option>
+                                <option value="Nhà cung cấp A">Nhà cung cấp A</option>
+                                <option value="Nhà cung cấp B">Nhà cung cấp B</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <label for="idgiaban">Giá bán</label>
+                            <input id="idgiaban" type="text" required>
+                        </div>
+                        <div class="item">
+                            <label for="idgiavon">Giá vốn</label>
+                            <input id="idgiavon" type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-2">
+                        <h3>Ảnh sản phẩm</h3>
+                        <div class="upphoto">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Chọn ảnh</span>
+                        </div>
+                        <form>
+                            <label for="comment">Mô tả sản phẩm</label><br>
+                            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Nhập mô tả của bạn tại đây..."></textarea>
+                        </form>
+                        
+                        <button class="save" type="submit">Lưu</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm đơn hàng mới</title>
+    <link rel="stylesheet" href="add_dh.css">
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Thêm Đơn Hàng Mới</h2>
+        <form onsubmit="return validateForm()">
+            <label for="orderID">Đơn hàng:</label>
+            <input type="text" id="orderID" name="orderID" placeholder="Nhập mã đơn hàng" required>
+
+            <label for="orderDate">Ngày đặt:</label>
+            <input type="text" id="orderDate" name="orderDate" placeholder="dd/mm/yyyy && hh:mm:ss" required>
+
+            <label for="customer">Khách hàng:</label>
+            <textarea id="customer" name="customer" rows="3" placeholder="Tên khách hàng, điện thoại, địa chỉ" required></textarea>
+
+            <label for="product">Sản phẩm:</label>
+            <input type="text" id="product" name="product" placeholder="Tên sản phẩm" required>
+
+            <label for="totalPrice">Tổng tiền:</label>
+            <input type="number" id="totalPrice" name="totalPrice" placeholder="Nhập số tiền" required>
+
+            <label for="paymentMethod">Hình thức thanh toán:</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="">Chọn hình thức thanh toán</option>
+                <option value="COD">Thu tiền tận nơi - COD</option>
+                <option value="online">Thanh toán online</option>
+            </select>
+
+            <label for="paymentStatus">Thanh toán:</label>
+            <select id="paymentStatus" name="paymentStatus" required>
+                <option value="">Chọn trạng thái thanh toán</option>
+                <option value="Chưa thanh toán">Chưa thanh toán</option>
+                <option value="Đã thanh toán">Đã thanh toán</option>
+            </select>
+
+            <label for="orderStatus">Trạng thái:</label>
+            <select id="orderStatus" name="orderStatus" required>
+                <option value="">Chọn trạng thái đơn hàng</option>
+                <option value="Đang xử lí">Đang xử lí</option>
+                <option value="Đã hoàn thành">Đã hoàn thành</option>
+                <option value="Đã hủy">Đã hủy</option>
+            </select>
+
+            <button type="submit">Lưu đơn hàng</button>
+        </form>
+    </div>
+
+</body>
+</html>
